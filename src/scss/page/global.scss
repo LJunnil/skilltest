@@ -1,0 +1,94 @@
+@import '../core/mixins/*';
+@import '../core/root/_variables';
+.page {
+  &__center,
+  &__footer {
+    @include is-laptop {
+      width: calc(100% - $sidebarWidth);
+    }
+    margin-right: auto;
+  }
+  &__footer {
+    background: #000;
+    padding: 50px;
+    color: #fff;
+    @include is-responsive {
+      padding: 140px 50px 60px;
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      &:first-child {
+        margin-bottom: 140px;
+      }
+      @include is-responsive {
+        flex-flow: column;
+      }
+      .logo {
+        p {
+          &:first-child {
+            font-weight: bold;
+          }
+          &:last-child {
+            font-weight: 200;
+          }
+        }
+      }
+      .navigation {
+        &__list {
+          display: flex;
+          flex-wrap: wrap;
+          &__item {
+            &:first-child {
+              @include is-responsive {
+                flex: 1 1 100%;
+                width: 1 1 100%;
+              }
+            }
+            @include is-responsive {
+              flex: 1 1 calc(100% / 2);
+              width: calc(100% / 2);
+            }
+            &:not(:last-child) {
+              @include is-laptop {
+                margin-right: 20px;
+              }
+            }
+            a {
+              color: #fff;
+              position: relative;
+              &:after {
+                transition: all 0.3s ease-out;
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                width: 0;
+                height: 1.5px;
+                left: 0;
+                background: #fff;
+              }
+              &:hover {
+                &:after {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .address {
+        font-weight: 200;
+        color: #c6c6c6;
+        @include font-line(14);
+        span {
+          font-weight: bold;
+        }
+      }
+      .text {
+        max-width: 500px;
+        color: #777777;
+        @include font-line(12);
+      }
+    }
+  }
+}

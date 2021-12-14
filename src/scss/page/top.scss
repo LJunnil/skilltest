@@ -1,0 +1,54 @@
+@import '../core/mixins/*';
+@import '../core/root/_variables';
+.page {
+  .introduction {
+    height: 100vh;
+    background: url('../../tiny/bg_mainvisual.png') no-repeat center center /
+      cover; // minified ver
+    // background: url('../../tiny/raw/bg_mainvisual.png') no-repeat center center /
+    //   cover;
+  }
+  .buildings {
+    padding: 60px 0 75px;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      &__item {
+        @include is-laptop {
+          flex: 1 1 calc(100% / 3);
+          width: calc(100% / 3);
+        }
+        @include is-responsive {
+          flex: 1 1 100%;
+          width: 100%;
+        }
+        &:hover {
+          .image {
+            transform: scale(1.6);
+          }
+        }
+        .frame {
+          height: 284px;
+          position: relative;
+          overflow: hidden;
+          .image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease-out;
+          }
+          .label {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: #fff;
+            text-transform: uppercase;
+          }
+        }
+        .caption {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
