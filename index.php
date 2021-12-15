@@ -17,7 +17,7 @@ $buildings = [
     ['office', 'タイトルが入りますタイトルが入ります']
 ];
 ?>
-<section class="introduction">
+<section class="introduction">  
 </section>
 <section class="buildings">
     <ul class="buildings__list">

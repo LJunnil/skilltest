@@ -51,8 +51,8 @@
                 <?php endforeach; ?>
             </ul>
         </nav>
-
+<P>NEWS : 2021.06.01   タイトルが入りますタイトルが入りますタイトルが入ります</p>
         <!-- header end -->
     </header>
     <main class="page__center">
-        <!-- content start here -->
+        <!-- content start here -->P

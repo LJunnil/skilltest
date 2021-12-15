@@ -9,7 +9,7 @@
     }
   }
   &__navbar {
-    z-index: 100;
+    z-index: 9990;
     width: 100%;
     position: fixed;
     background: transparent;
@@ -178,7 +178,7 @@
         }
         &:hover,
         &.isCurrent {
-          // background: #229fe7;
+           background: #229fe7;
           //  {
           //     color: #fff !important;
           // }
