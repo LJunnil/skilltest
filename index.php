@@ -1,7 +1,6 @@
 <?php
 require('app/functions.php');
-includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' => ['page/top.css']]);
-
+includeWithVariables('includes/header.php', ['pageTitle' => 'index', 'headCSS' => ['page/top.css']]);                   
 $buildings = [
     ['hospital', 'タイトルが入りますタイトルが入ります'],
     ['office', 'タイトルが入りますタイトルが入ります'],
@@ -17,8 +16,25 @@ $buildings = [
     ['office', 'タイトルが入りますタイトルが入ります']
 ];
 ?>
+
 <section class="introduction">  
+<div class="header-logo"> 
+    <div class="logo_1">
+<p>SHIRAYANAGI</p>
+</div>
+
+<div class="logo_2">
+<p>ARCHITECT OFFICE</p>
+</div>
+
+<div class="logo_3">
+<p>施工事例施工事例</p>
+</div>
+     </div>
 </section>
+<div class="news">
+<p> NEWS :2021.06.01   タイトルが入りますタイトルが入りますタイトルが入ります</p>
+</div>
 <section class="buildings">
     <ul class="buildings__list">
         <?php
@@ -39,6 +55,8 @@ $buildings = [
         endforeach;
         ?>
     </ul>
+  
 </section>
+
 <?php
-includeWithVariables('includes/footer.php', []) ?>
+includeWithVariables('includes/footer.php', [""]) ?>

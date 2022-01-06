@@ -1,3 +1,37 @@
+.header-logo {
+  position: absolute;
+  top: 81px;
+  left: 90px;
+  font-size: 2.5rem;
+
+  }
+  .logo_1{
+        font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    
+    @include is-max(500px) {
+      font-size: 20px;
+    }
+}
+  .logo_2{
+    line-height: 40px;
+      font-size: 40px;
+      font-weight: 200;
+      @include is-max(500px) {
+        font-size: 20px;
+      }
+  }
+  .logo_3{
+    font-size: 15px;
+      font-weight: 300;
+      line-height: 31px;
+  }
+  .news{
+    padding-top: 54px;
+    
+  }
+
 .l-header {
   overflow: visible;
   padding: 0;
@@ -7,9 +41,9 @@
     @include is-responsive {
       height: 70px;
     }
-  }
+
   &__navbar {
-    z-index: 9990;
+    z-index: 9900;
     width: 100%;
     position: fixed;
     background: transparent;
@@ -28,7 +62,7 @@
     .btnArea {
       position: absolute;
     }
-    .hamburger {
+   // .hamburger {
       left: 2%;
       @include is-max(992px) {
         left: 15px;
@@ -53,6 +87,8 @@
         }
       }
     }
+.P{
+justify-content: baseline;
 
     .btnArea02 {
       padding: 2px;
@@ -257,7 +293,9 @@
         width: 100%;
         border: 1px solid $color-main;
       }
+    
     }
   }
 
+}
 }

@@ -24,8 +24,7 @@
 <button class="c-button c-button--navigation" id="button_burger"></button>
     <header class="page__top l-sidebar">
         <!-- header start here -->
-    
-
+  
         <nav>
             <ul class="topNavigation__list">
                 <?php
@@ -51,8 +50,11 @@
                 <?php endforeach; ?>
             </ul>
         </nav>
-<P>NEWS : 2021.06.01   タイトルが入りますタイトルが入りますタイトルが入ります</p>
+
         <!-- header end -->
     </header>
     <main class="page__center">
-        <!-- content start here -->P
+    
+
+            
+        <!-- content start here -->
